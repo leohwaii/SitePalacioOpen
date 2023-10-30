@@ -5,6 +5,27 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+function validarAceite(){
+          swal({
+            title: "Atenção!",
+            text: "Ao clicar em Realizar inscrição, você concorda com todas as regras estabelecidas no regulamento.",
+            type: "info",
+            showCancelButton: true,
+            cancelButtonClass: 'btn-secondary ',
+            confirmButtonColor: "#c2d10c",
+            confirmButtonText: "Realizar Inscrição",
+            cancelButtonText: "Cancelar",
+            closeOnConfirm: false,
+            closeOnCancel: false
+          }, function (isConfirm) {
+            if (isConfirm) {
+               window.location.href = "https://www.sympla.com.br/palacio-das-aguas-open-2023__2226974";
+              
+            } else {
+                swal("Cancelado", "Por Favor Leia o Regulamento", "info");
+            }
+          })
+}
 (function() {
   "use strict";
 
